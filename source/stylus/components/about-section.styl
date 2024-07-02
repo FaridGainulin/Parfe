@@ -1,7 +1,4 @@
 .about-section
-  background: linear-gradient(to right, rgb(88, 115, 255), rgb(87, 180, 248))
-  +above($breakpoints.md)
-    background: linear-gradient(to right, rgb(88, 115, 255), rgb(87, 180, 248) 20%, rgb(87, 180, 248) 43%, white 40%)
   &__container
     position relative
     padding 20px 0 20px 0
@@ -10,9 +7,10 @@
 
   &__inner
     display: flex
-    flex-direction: column
+    flex-direction: column-reverse
     gap 10px
     +above($breakpoints.md)
+      flex-direction: column
       flex-direction: row
       gap 47px
 
@@ -20,24 +18,47 @@
     width 100%
     max-width: 475px
     margin 0 auto
+    display flex
+    flex-direction: column
+    justify-content: flex-end
+    padding-top: 20px
+
     +above($breakpoints.md)
+      padding-top: 0
+      position relative
       margin 0
+
+      &::after
+        content: ""
+        width 12845px
+        height calc(100% + 129px)
+        position: absolute
+        bottom: 0
+        right: 0
+        border-bottom-right-radius: 20px
+        background-color: rgb(88, 115, 255)
+        background-image: linear-gradient(270.00deg, rgb(87, 180, 248), rgb(88, 115, 255) 100%)
+        background-repeat: no-repeat
+        background-size: 845px 100%
+        background-position: right
+        z-index -1
 
   &__block-owner
     width 300px
-    margin 10px auto 10px auto
+    margin 10px auto
     height: 140px
     border-radius: 20px
-    backdrop-filter: blur(32.2px);
-    background: rgba(255, 255, 255, 0.15)
     display: flex
     flex-direction: column
     justify-content center
     align-items: center
     gap 10px
+    background: linear-gradient(270.00deg, rgb(87, 180, 248), rgb(88, 115, 255) 100%)
     +above($breakpoints.sm)
       width 390px
     +above($breakpoints.md)
+      background: rgba(255, 255, 255, 0.15)
+      backdrop-filter: blur(32.2px);
       margin 0 0 37px 43px
 
   &__owner-name
@@ -78,6 +99,7 @@
       max-width: 600px
       text-align: center
     +above($breakpoints.md)
+      text-align: left
       padding 0
       margin 0
       max-width: 629px
