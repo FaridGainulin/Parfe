@@ -1,0 +1,96 @@
+.main-section
+  background-image: url("../images/main-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    position relative
+    text-align: center
+    padding: 20px 0 416px 0
+    +above($breakpoints.md)
+      text-align: start
+      padding: 45px 0 152px 0
+
+  &__title
+    padding-top 20px
+    +above($breakpoints.lg)
+      padding-top 78px
+
+  &__sub-title
+    padding 10px 0 10px 0
+    +above($breakpoints.md)
+      padding 22px 0 15px 0
+
+  &__line
+    width 66px
+    padding-top 10px
+    margin 0 auto
+    border-top: 1px solid $color-light-brown
+    +above($breakpoints.md)
+      padding-top 26px
+      margin 0
+
+  &__text
+    padding-bottom 10px
+    color $color-grey
+    +above($breakpoints.md)
+      padding-bottom 19px
+
+  &__form
+    max-width 366px
+    +above($breakpoints.md)
+      max-width 268px
+
+  &__img-pie
+    position: absolute
+    border-radius: 20px
+    width: 180px;
+    height: auto;
+    right: calc(50% - 154px);
+    bottom: 156px;
+    +above($breakpoints.sm)
+      width: 210px;
+      right: calc(50% - 182px);
+      bottom: 120px;
+    +above($breakpoints.md)
+        width: 360px;
+        height: 460px
+        right: 0
+        top 21%
+
+  &__img-coffee
+    position: absolute
+    border-radius: 20px
+    width 160px
+    height: auto
+    right: calc(50% - 7px);
+    bottom: 15px;
+    +above($breakpoints.sm)
+      width: 162px;
+      right: calc(50% - -19px);
+      bottom: 15px;
+    +above($breakpoints.md)
+        width: 251px;
+        height: 344px
+        right: 230px;
+        top: calc(50% - -4%);
+
+  &__img-blue-pluses
+    position: absolute
+    right: calc(50% - 132px);
+    bottom: 112px;
+    +above($breakpoints.sm)
+      bottom: 82px;
+    +above($breakpoints.md)
+      right: 100px;
+      top: 695px;
+
+  &__img-brown-pluses
+    position: absolute
+    right: calc(50% - -38px);
+    bottom: 352px;
+    +above($breakpoints.md)
+      left: 26%;
+      top: 84%;
+

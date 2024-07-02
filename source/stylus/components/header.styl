@@ -1,0 +1,50 @@
+.header
+
+  &__inner
+    display: flex
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.sm)
+      padding 17px 19px 17px 19px
+
+  &__title
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      padding 8px 0 7px 20px
+      border-left: 1px solid $color-light-brown
+
+  &__left,
+  &__right
+    display: flex
+    align-items: center
+
+  &__left
+    gap 20px
+
+  &__right
+    justify-content flex-end
+    gap 30px
+    width none
+    +above($breakpoints.sm)
+      width 100%
+      max-width: 392px
+    +above($breakpoints.md)
+      gap 0
+      justify-content space-between
+
+  &__line
+    padding 10px 0 0 0
+    border-bottom: 1px solid $color-light-brown
+    +above($breakpoints.sm)
+      padding 20px 0 0 0
+
+  &__call
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+
+.logo-img
+  width 142px
+  height: 66px
+

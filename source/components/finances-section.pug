@@ -1,0 +1,41 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      .finances-section__block
+        h2.finances-section__title.font-s-40 Ключевые показатели франшизы
+        .finances-section__text.font-s-24 На что могут рассчитывать партнеры «Parfe»
+      .finances-section__inner
+        img.finances-section__img(src="images/finances-section-image.png" loading="lazy" width="603" height="771" alt="image")
+        .swiper-simple
+          .finances-section__cards.swiper-wrapper
+            .finances-section__card.swiper-slide
+              .font-s-32 2,5 месяца
+              .color-grey понадобится <br> на запуск
+            .finances-section__card.swiper-slide
+              .font-s-32 3 745 000 ₽
+              .color-grey средний размер <br> вложений
+            .finances-section__card.swiper-slide
+              .font-s-32 1 290 000 ₽
+              .color-grey средний размер <br> ежемесячной выручки
+            .finances-section__card.swiper-slide
+              .font-s-32 29,3%
+              .color-grey рентабельность по <br> чистой прибыли
+            .finances-section__card.swiper-slide
+              .font-s-32 15 месяцев
+              .color-grey средний срок <br> окупаемости бизнеса
+            .finances-section__card.swiper-slide
+              .font-s-32 345 000 ₽
+              .color-grey средний размер <br> ежемесячной прибыли
+          .swiper-progress.simple-pagination
+      .finances-section__bottom
+        .finances-section__bottom-title.font-s-26 Хотите получить детальные цифры <br> для вашего города и под ваш бюджет?
+        .finances-section__bottom-text.font-s-20.font-w-inter-regular.color-grey Скачайте финансовую модель франшизы «Parfe»
+        form.finances-section__bottom-form(data-feedback-form)
+          input.input.input--small(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--small(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--mini(type="submit") Cкачать
+          .finances-section__bottom-privacy
+            .font-w-inter-light.font-s-12 Я принимаю условия 
+              a(href="#" data-remodal-target="privacy").agree-link Политики конфиденциальности
+
+

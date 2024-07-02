@@ -1,0 +1,31 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      .about-section__inner
+        .about-section__block
+          .about-section__block-owner
+            .about-section__owner-name Наталья Маркова
+              img.about-section__quotes(src="images/about-section-quotes.svg" loading="lazy" width="66" height="45" alt="quotes")
+            .about-section__owner.color-black-grey Основатель компании
+          img.about-section__img(src="images/about-section-image.jpeg" loading="lazy" width="475" height="492" alt="image")
+        .about-section__content.color-black
+          h2.about-section__title.font-s-40 История создания «Parfe»
+          .about-section__content.font-s-20
+            | «История нашей кофейни началась в 2019 году с открытия <br> кондитерской студии с кухней и витриной с десертами. <br> В дальнейшем мы также запустили направление торты на заказ. В декабре 2021 года мы переехали в помещение побольше, <br> сделали ремонт и открыли кофейню с посадочными местами. <br> По просьбам гостей разработали и ввели основное меню, <br> которое также начали постепенно расширять. 
+            br
+            br
+            | Сегодня наша кондитерская & кофейня одна из самых <br> популярных в городе, с большим количеством десертов <br> и сотнями положительных отзывов от постоянных гостей. <br> Мы работаем только с самыми качественными продуктами, <br> стараясь удовлетворить растущий спрос на полезные <br> и вкусные десерты. 
+            br
+            br
+            | Партнёры нашей франшизы получают не только проверенную <br> бизнес-модель, но и отработанное меню с наиболее <br> ходовыми позициями, список надёжных поставщиков <br> и выстроенную систему управления командой и бизнесом»
+section.about-section-sub
+  .wrapper
+    .about-section-sub__container
+      .about-section-sub__text.color-black.font-s-24 У вас остались вопросы? <br> Буду рад на них ответить!
+      form.about-section-sub__form(data-feedback-form)
+        input.input(type="text" name="answer" autocomplete="off" placeholder="Вопрос")
+        .about-section-sub__adaptive
+          input.input.input--medium(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--medium(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Отправить
+

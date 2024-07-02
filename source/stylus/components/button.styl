@@ -1,0 +1,99 @@
+.btn
+  height: 50px
+  width 100%
+  position: relative
+  display: flex;
+  justify-content: center
+  align-items: center
+  overflow: hidden
+  color: $color-white
+  border-radius: 32px
+  background: linear-gradient(270.00deg, rgb(87, 180, 248),rgb(88, 115, 255) 100%)
+  box-shadow: 0px 8px 20px 0px #5873ff
+  font-family: "ITCAvantGardeGothicStd-Book"
+  font-weight: 300
+  font-size: 18px;
+  line-height: 120%
+  transition transform 0.5s, top 0.8s
+  +above($breakpoints.sm)
+    height: 55px;
+  +above($breakpoints.md)
+    height: 60px
+
+  &:hover
+    transform: scale(1.05)
+
+  &:active
+    top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation
+      0%
+          left: -150%
+      100% 
+          left: 250%
+
+  &--mini
+    max-width: 100%
+    +above($breakpoints.md)
+      max-width 240px
+
+  &--small
+    max-width 250px
+
+  &--large
+    max-width 260px
+    height: 55px
+    +above($breakpoints.sm)
+      height: 60px;
+    +above($breakpoints.md)
+      height: 65px
+
+  &--xl
+    max-width 264px
+
+  &--xxl
+    max-width 275px
+
+  &--xxxl
+    width 100%
+    +above($breakpoints.lg)
+      max-width 313px
+
+  &--order-call
+    max-width 184px
+    height: 48px
+    border-radius: 25px;
+    border 1px solid $color-light-brown
+    background: inherit
+    box-shadow: none
+    font-size: 16px;
+    +above($breakpoints.sm)
+      height: 50px;
+    +above($breakpoints.md)
+      height: 52px
+
+  &--number-call
+    max-width 184px
+    height: 36px
+    border-radius: 25px;
+    border 1px solid $color-light-brown
+    background: inherit
+    box-shadow: none
+    font-size: 16px;
+    +above($breakpoints.sm)
+      height: 38px;
+    +above($breakpoints.md)
+      height: 40px
+

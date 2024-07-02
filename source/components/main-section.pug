@@ -1,0 +1,23 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      .main-section__images
+        img.main-section__img-pie(src="images/main-section-pie.jpeg" loading="lazy" width="360" height="460" alt="pie")
+        img.main-section__img-coffee(src="images/main-section-coffee.jpeg" loading="lazy" width="251" height="344" alt="coffee")
+        img.main-section__img-blue-pluses(src="images/main-section-blue-pluses.svg" loading="lazy" width="110" height="29" alt="pluses")
+        img.main-section__img-brown-pluses(src="images/main-section-brown-pluses.svg" loading="lazy" width="110" height="29" alt="pluses")
+      include ../components/header.pug
+      h1.main-section__title.font-s-60
+        | ОТКРОЙТЕ <br>
+        | КОНДИТЕРСКУЮ <br>
+        | СТУДИЮ & КОФЕЙНЮ <br>
+        mark.mark-bg «Parfe»
+      .main-section__sub-title.font-s-24.mark Получайте от 345 000 рублей чистой <br> прибыли ежемесячно
+      .main-section__line
+      .main-section__text Получите пошаговый план открытия компании <br> по франшизе в своем городе
+      form.main-section__form.vertical-form(data-feedback-form)
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить
+
+
