@@ -1,0 +1,96 @@
+.city-section
+  background-image: url("../images/city-section-bg.png")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    padding: 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 142px 0 76px 0
+
+  &__blocks
+    display: flex
+    flex-direction: column
+    +above($breakpoints.md)
+      flex-direction: row
+      justify-content space-between
+
+  &__block-left
+    +above($breakpoints.md)
+      width 524px
+
+  &__title
+    padding: 20px 0 20px 0
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+      padding 33px 0 69px 0
+
+  &__text
+    padding: 0 0 20px 0
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+      padding 0 0 30px 0
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap 8px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      width 452px
+    +above($breakpoints.md)
+      margin 0
+      width 524px
+
+  &__block-right-logo
+    display: flex
+    justify-content center
+    padding 20px 0 20px 0
+    +above($breakpoints.md)
+      justify-content flex-start
+      padding 35px 0 33px 32px
+
+  &__block-right
+    position relative
+    margin 0 auto
+    +above($breakpoints.md)
+      padding-left 18px
+      margin 0
+      &::before
+        content: ""
+        width 50vw
+        height calc(100% + 218px)
+        position: absolute
+        bottom: -76px
+        left: 0
+        border-top-left-radius: 20px;
+        background-color: rgb(88, 115, 255)
+        background-image: linear-gradient(270.00deg, rgb(88, 115, 255), rgb(87, 180, 248) 100%)
+        background-repeat: no-repeat
+        background-size: 845px 100%
+        background-position: left
+
+  &__block-right-logo
+    position relative
+
+  &__block-right-image
+    position relative
+    width 300px
+    height: auto
+    border-radius: 23px
+    +above($breakpoints.sm)
+      width 452px
+      height: 402px
+
+  &__block-right-pluses
+    position: absolute
+    bottom: 1px
+    right: 1px
+    +above($breakpoints.sm)
+      bottom: -5px
+      right: 65px

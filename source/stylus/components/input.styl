@@ -2,8 +2,8 @@
   height: 50px
   width 100%
   padding: 0 32px;
-  font-family: "ITCAvantGardeGothicStd-Book"
-  font-weight: 300
+  font-family: "Inter-Regular"
+  font-weight: 400
   font-size: 18px;
   line-height: 120%
   color: $color-grey
@@ -46,7 +46,13 @@
       40%, 60%
         transform: translate3d(4px, 0, 0)
 
+  &--mini
+    background-color: white
+    +above($breakpoints.md)
+      max-width: 258px
+
   &--small
+    background-color: white
     +above($breakpoints.lg)
       max-width: 258px
 

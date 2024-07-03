@@ -1,16 +1,21 @@
 .footer
-  padding: 30px 0
-
-  &__inner
+  background-color $color-black
+  &__container
+    padding 20px 0 20px 0
     display: flex
     flex-direction: column
     align-items: center
-    gap: 12px
-    text-align: center
-
+    gap: 15px
     +above($breakpoints.sm)
-      justify-content: space-between
+      padding 50px 0 50px 19px
       flex-direction: row
-      align-items: center
-      gap: 30px
-      text-align: start
+      justify-content space-between
+
+  &__block-inner
+    display: flex
+    align-items: center
+    gap 20px
+
+  &__privacy
+    color $color-light-brown
+    text-decoration: underline

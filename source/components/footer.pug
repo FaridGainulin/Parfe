@@ -1,6 +1,10 @@
 footer.footer
-  .footer__inner
-    .header__title.font-s-18 Франшиза юридического агентства <br> по защите должников и дольщиков
-    include ../components/logo.pug
-    .footer__connection
-      include ../components/phone-number.pug
+  .wrapper
+    .footer__container.font-w-inter-regular
+      .footer__block-inner
+        img.footer__logo(src="images/logo.svg" loading="lazy" width="105" height="49" alt="pluses")
+        .footer__text.font-s-16 Франшиза кондитерской <br> студии & кофейни
+      .footer__privacy.font-s-14
+        a(href="#" data-remodal-target="privacy") Политика конфиденциальности
+      .footer__connection
+        a.btn.btn--number-call(href="tel:+70000000000") +7 000 000 00 00

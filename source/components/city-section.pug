@@ -1,17 +1,25 @@
 section.city-section
   .wrapper
     .city-section__container
-      h2.city-section__title.font-s-50.font-w-inter-bold
-        | Сделайте первый шаг <br>
-        | к открытию юридического <br>
-        | агентства «ВСЕ ХОРОШО»
-      .city-section__inner
-        .city-section__inner-logo
-          include ../components/logo.pug
-        .city-section__inner-text
-          .font-s-24.font-w-regular Проверьте, свободен ли ваш <br> город для работы по франшизе
-      .city-section__bottom
-        form.horizontal-form(data-feedback-form)
-          input.input-finances(type="text" name="name" autocomplete="off" placeholder="Имя")
-          input.input-finances(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
-          button.btn-finances(type="submit") Проверить
+      .city-section__blocks
+        .city-section__block-left
+          img(src="images/main-section-blue-pluses.svg" loading="lazy" width="132" height="34" alt="pluses")
+          h2.city-section__title.font-s-42.font-w-regular
+            .font-s-48 ЗАПУСТИТЕ <br>
+            | ПРИБЫЛЬНЫЙ БИЗНЕС <br> ПО ФРАНШИЗЕ
+            mark.mark-bg «Parfe»
+          .city-section__text.font-s-26 Проверьте, свободен ли ваш <br> город для работы
+          form.city-section__form(data-feedback-form)
+            input.input.input--mini(type="text" name="city" autocomplete="off" placeholder="Город")
+            input.input.input--mini(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            input.input.input--mini(type="email" name="email" autocomplete="off" placeholder="e-mail")
+            button.btn.btn--small(type="submit") Проверить город
+          .start-section__privacy
+            |Я принимаю условия 
+            a(href="#" data-remodal-target="privacy").agree-link Политики конфиденциальности
+        .city-section__block-right
+          .city-section__block-right-logo
+            img(src="images/logo.svg" loading="lazy" width="127" height="59" alt="logo")
+          img.city-section__block-right-image(src="images/city-section-image.jpeg" loading="lazy" width="452" height="402" alt="image")
+          .city-section__block-right-pluses
+            img(src="images/main-section-brown-pluses.svg" loading="lazy" width="132" height="34" alt="pluses")

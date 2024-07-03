@@ -10,8 +10,8 @@
   border-radius: 32px
   background: linear-gradient(270.00deg, rgb(87, 180, 248),rgb(88, 115, 255) 100%)
   box-shadow: 0px 8px 20px 0px #5873ff
-  font-family: "ITCAvantGardeGothicStd-Book"
-  font-weight: 300
+  font-family: "Inter-Regular"
+  font-weight: 400
   font-size: 18px;
   line-height: 120%
   transition transform 0.5s, top 0.8s
@@ -50,7 +50,9 @@
       max-width 240px
 
   &--small
-    max-width 250px
+    max-width: 100%
+    +above($breakpoints.md)
+      max-width 250px
 
   &--large
     max-width 260px
@@ -85,7 +87,7 @@
       height: 52px
 
   &--number-call
-    max-width 184px
+    width 184px
     height: 36px
     border-radius: 25px;
     border 1px solid $color-light-brown

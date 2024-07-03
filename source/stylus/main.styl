@@ -1,15 +1,15 @@
 @font-face
-  font-family: "InterTight-Light"
-  src: url('../fonts/InterTight-Light.woff'), url('../fonts/InterTight-Light.woff2')
-  font-display: swap
-@font-face
-  font-family: "InterTight-Regular"
-  src: url('../fonts/InterTight-Regular.woff'), url('../fonts/InterTight-Regular.woff2')
+  font-family: "DidactGothic-Regular"
+  src: url('../fonts/DidactGothic-Regular.woff'), url('../fonts/DidactGothic-Regular.woff2')
   font-display: swap
 
 @font-face
-  font-family: "ITCAvantGardeGothicStd-Book"
-  src: url('../fonts/ITCAvantGardeGothicStd-Book.woff'), url('../fonts/ITCAvantGardeGothicStd-Book.woff2')
+  font-family: "Inter-Light"
+  src: url('../fonts/InterTight-Light.woff'), url('../fonts/InterTight-Light.woff2')
+  font-display: swap
+@font-face
+  font-family: "Inter-Regular"
+  src: url('../fonts/InterTight-Regular.woff'), url('../fonts/InterTight-Regular.woff2')
   font-display: swap
 
 @font-face
@@ -26,9 +26,9 @@
 body
   margin: 0 auto
   font-size: 18px
-  font-family: "ITCAvantGardeGothicStd-Book"
+  font-family: "Inter-Light"
   font-weight: 300
-  line-height: 110%
+  line-height: 130%
   color $color-white
 
 .mark
@@ -39,7 +39,9 @@ body
   background-color $color-light-brown
   border-radius: 32px
   color $color-white
-  padding 0 20px
+  padding 0 20px 4px 20px
+  display: inline-block;
+  line-height: 100%;
 
 .layout
   width: 100%
@@ -63,6 +65,13 @@ body
     padding: 0 20px
     max-width: 1220px
 
+.wrapper-presentation
+  margin: 0 auto
+  +above($breakpoints.md)
+    max-width: 1024px
+  +above($breakpoints.xxxl)
+    max-width: 1780px
+
 .main
   flex: 1
 
@@ -70,6 +79,7 @@ body
   display: flex
   flex-direction: column
   width 100%
+  max-width: 320px
   margin: 0 auto
   gap: 9px
   +above($breakpoints.md)
