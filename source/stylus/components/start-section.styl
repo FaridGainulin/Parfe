@@ -38,6 +38,8 @@
     width 300px
     height: auto
     margin: 0 auto
+    +above($breakpoints.md)
+      width 410px
     +above($breakpoints.sm)
       width 515px
       height: 581px
@@ -106,9 +108,10 @@
   &__img-coffee
     width 300px
     height: auto
-    margin: 0 auto
-    border-radius: 20px
+    margin: 15px auto
+    border-radius: 22px
     +above($breakpoints.lg)
+      margin 0
       position: absolute
       width 457px
       height: 515px
@@ -173,10 +176,10 @@
 .step-5
   +above($breakpoints.lg)
     position: absolute;
-    right: 600px;
+    right: 500px;
     bottom: -237px;
   +above($breakpoints.xl)
-    right: 601px;
+    right: 500px;
     bottom: -229px;
   +above($breakpoints.xxl)
     right: 600px;
@@ -185,10 +188,10 @@
 .step-6
   +above($breakpoints.lg)
     position: absolute;
-    right: 600px;
+    right: 500px;
     bottom: -348px;
   +above($breakpoints.xl)
-    right: 601px;
+    right: 500px;
     bottom: -341px;
   +above($breakpoints.xxl)
     right: 600px;
@@ -197,10 +200,10 @@
 .step-7
   +above($breakpoints.lg)
     position: absolute;
-    right: 600px;
+    right: 500px;
     bottom: -462px;
   +above($breakpoints.xl)
-    right: 600px;
+    right: 500px;
     bottom: -452px;
   +above($breakpoints.xxl)
     right: 600px;
