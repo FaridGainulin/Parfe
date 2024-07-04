@@ -46,6 +46,14 @@
       40%, 60%
         transform: translate3d(4px, 0, 0)
 
+  &--holder-white
+    color: $color-white
+    &:focus
+      color: $color-white
+      caret-color: $color-white
+    &::placeholder
+      color: $color-white
+
   &--mini
     background-color: white
     +above($breakpoints.md)

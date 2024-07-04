@@ -48,9 +48,11 @@
       width 524px
 
   &__block-right-logo
-    display: flex
-    justify-content center
-    padding 20px 0 20px 0
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      padding 20px 0 20px 0
     +above($breakpoints.md)
       justify-content flex-start
       padding 35px 0 33px 32px
@@ -83,7 +85,9 @@
     width 300px
     height: auto
     border-radius: 23px
+    padding-top 20px
     +above($breakpoints.sm)
+      padding 0
       width 452px
       height: 402px
 
