@@ -38,9 +38,13 @@
     width 300px
     height: auto
     margin: 0 auto
-    +above($breakpoints.md)
-      width 410px
     +above($breakpoints.sm)
+      width 410px
+      height: auto
+    +above($breakpoints.lg)
+      margin-bottom 150px
+    +above($breakpoints.xl)
+      margin 0
       width 515px
       height: 581px
 
@@ -179,7 +183,7 @@
     right: 500px;
     bottom: -237px;
   +above($breakpoints.xl)
-    right: 500px;
+    right: 600px;
     bottom: -229px;
   +above($breakpoints.xxl)
     right: 600px;
@@ -191,7 +195,7 @@
     right: 500px;
     bottom: -348px;
   +above($breakpoints.xl)
-    right: 500px;
+    right: 600px;
     bottom: -341px;
   +above($breakpoints.xxl)
     right: 600px;
@@ -203,7 +207,7 @@
     right: 500px;
     bottom: -462px;
   +above($breakpoints.xl)
-    right: 500px;
+    right: 600px;
     bottom: -452px;
   +above($breakpoints.xxl)
     right: 600px;
