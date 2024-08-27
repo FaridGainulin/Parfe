@@ -9,9 +9,9 @@
 
   &__title
     display: none
-    +above($breakpoints.sm)
+    +above($breakpoints.md)
       display: block
-      padding 8px 0 7px 20px
+      padding 7px 0 6px 20px
       border-left: 1px solid $color-light-brown
 
   &__left,
@@ -46,8 +46,10 @@
 
 .logo-img
   width 114px
-  height 53px
+  height auto
   +above($breakpoints.sm)
-    width 142px
-    height: 66px
-
+    width 150px
+  +above($breakpoints.md)
+    width 250px
+  +above($breakpoints.xxl)
+    width 314px

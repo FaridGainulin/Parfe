@@ -19,6 +19,8 @@
   &__block-left
     +above($breakpoints.md)
       width 524px
+    +above($breakpoints.xxl)
+      width 580px
 
   &__title
     padding: 20px 0 20px 0
@@ -56,6 +58,16 @@
     +above($breakpoints.md)
       justify-content flex-start
       padding 35px 0 33px 32px
+
+  &__logo-city
+    width 100px
+    height: auto
+    +above($breakpoints.sm)
+      width 150px
+    +above($breakpoints.md)
+      width 200px
+    +above($breakpoints.xxl)
+      width 247px
 
   &__block-right
     position relative

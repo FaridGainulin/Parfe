@@ -16,6 +16,16 @@
     align-items: center
     gap 20px
 
+  &__logo
+    width 100px
+    height: auto
+    +above($breakpoints.sm)
+      width 150px
+    +above($breakpoints.md)
+      width 170px
+    +above($breakpoints.xxl)
+      width 197px
+
   &__privacy
     color $color-light-brown
     text-decoration: underline
